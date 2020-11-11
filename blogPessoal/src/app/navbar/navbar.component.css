@@ -1,6 +1,69 @@
+
 .text{
 
     letter-spacing: .2rem;
     font-size: 16pt;
+    
 
+}
+a{
+
+    cursor: pointer;
+
+}
+.fundo{
+    background-color: rgb(12, 4, 121);
+}
+.fonte{
+    text-decoration-color: white;
+}
+ul{
+	display: flex;
+
+	margin: auto;
+
+	justify-content: space-between;
+    text-align: center;
+    text-decoration-color: white;
+}
+li {
+	padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+	min-width: 80px;
+    margin: auto;
+    text-decoration-color: white;
+}
+
+li:hover {
+  background-image: url('https://www.freepnglogos.com/uploads/basketball-png/basketball-open-letter-3.png');
+  background-size: 100% 100%;
+  color: white;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 white;
+    font-weight: bold;
+    text-decoration-color: white;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
 }
