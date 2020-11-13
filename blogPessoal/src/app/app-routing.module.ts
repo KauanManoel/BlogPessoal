@@ -1,4 +1,7 @@
-
+import { DeleteTemaComponent } from './delete-tema/delete-tema.component';
+import { PutTemaComponent } from './put-tema/put-tema.component';
+import { DeletePostagemComponent } from './delete-postagem/delete-postagem.component';
+import { PutPostagemComponent } from './put-postagem/put-postagem.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { LoginComponent } from './login/login.component';
 import { FeedComponent } from './feed/feed.component';
@@ -15,6 +18,10 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'cadastro', component: CadastroComponent},
   { path: 'cadastro-tema', component: PostTemaComponent },
+  { path: 'editar-post/:id', component: PutPostagemComponent },
+  { path: 'delete-post/:id', component: DeletePostagemComponent},
+  { path: 'editar-tema/:id', component: PutTemaComponent },
+  { path: 'delete-tema/:id', component: DeleteTemaComponent }
 
 ];
 
